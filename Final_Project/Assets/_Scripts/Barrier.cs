@@ -31,7 +31,7 @@ public class Barrier : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered");
+        //Debug.Log("Entered");
         if (other.gameObject.tag == "Player")
         {
             Destroy(other.gameObject);

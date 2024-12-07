@@ -11,7 +11,6 @@ public class PlayerDataManager : MonoBehaviour
     private const string duration_key = "DurationPlayed";
     private const string score_key = "PlayerScore";
     private const string feedback_key = "PlayerFeedback";
-
     void Start()
     {
         //Check for unique ID
@@ -31,5 +30,16 @@ public class PlayerDataManager : MonoBehaviour
 
         return PlayerPrefs.GetString(uniqueID_key);
     }
+
+    public void SavePlayerData(float time, float duration, int score, string feedback)
+    {
+        PlayerPrefs.SetFloat(time_key, time);
+        PlayerPrefs.SetFloat(duration_key, duration);
+        PlayerPrefs.SetInt(score_key, score);
+        PlayerPrefs.SetString(feedback_key, feedback);
+        Debug.Log("Player Data Saved!");
+
+    }
+
 
 }

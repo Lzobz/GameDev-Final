@@ -33,7 +33,7 @@ public class balloon : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered");
+        //Debug.Log("Entered");
         if (other.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
