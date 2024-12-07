@@ -1,5 +1,32 @@
 List of new features, bug fixes and improvements
 
+# Version 1.3.10
+* Hotfix for type resolving
+* Usability improvements for VSCode exporter
+* More filters for expected error logs
+
+# Version 1.3.9
+* Hotfix for Unity sink
+
+# Version 1.3.8
+* Hotfix for Unity sink
+
+# Version 1.3.7
+* Bugfix for exporter/updater
+* Bugfix for logging options
+
+# Version 1.3.6
+* VSCode readme updated
+
+# Version 1.3.5
+* JSON library switched back to Newtonsoft.JSON
+* Rule xml files removed from Unity asset
+* Unnessary analyzer binaries are removed from Roslyn Analyzer
+
+# Version 1.3.4
+* Stability improvements for network (mqttnet)
+* Hotfix for JSON mapping
+
 # Version 1.3.3
 * Full version for VSCode is released!
 * Fix for VSCode adorments when document is modified

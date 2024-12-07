@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Threading;
 using Task = System.Threading.Tasks.Task;
-//using CancellationToken = System.Threading;
 using Application = UnityEngine.Application;
 
 using Meryel.UnityCodeAssist.MQTTnet;
@@ -16,9 +15,11 @@ using Meryel.UnityCodeAssist.MQTTnet.Adapter;
 using Meryel.UnityCodeAssist.MQTTnet.Implementations;
 using Meryel.UnityCodeAssist.MQTTnet.Diagnostics;
 
+
 #pragma warning disable IDE0005
 using Serilog = Meryel.Serilog;
 using MQTTnet = Meryel.UnityCodeAssist.MQTTnet;
+using Newtonsoft = Meryel.UnityCodeAssist.Newtonsoft;
 #pragma warning restore IDE0005
 
 
@@ -248,7 +249,8 @@ namespace Meryel.UnityCodeAssist.Editor
             //System.Text.Json.JsonSerializer;
 
             //var str = TinyJson.JsonWriter.ToJson(obj);
-            var str = Meryel.UnityCodeAssist.ProjectData.LitJson.JsonMapper.ToJson(obj);
+            //var str = Meryel.UnityCodeAssist.ProjectData.LitJson.JsonMapper.ToJson(obj);
+            var str = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
 
             return str;
         }
@@ -577,7 +579,8 @@ namespace Meryel.UnityCodeAssist.Editor
             //return System.Text.Json.JsonSerializer.Deserialize<T>(data)!;
             //return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(data)!;
             //return TinyJson.JsonParser.FromJson<T>(data)!;
-            return Meryel.UnityCodeAssist.ProjectData.LitJson.JsonMapper.ToObject<T>(data);
+            //return Meryel.UnityCodeAssist.ProjectData.LitJson.JsonMapper.ToObject<T>(data);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(data)!;
 
             //byte[] buffer = System.Text.Encoding.UTF8.GetBytes(data);
             //T val = OdinSerializer.SerializationUtility.DeserializeValue<T>(buffer, OdinSerializer.DataFormat.JSON);

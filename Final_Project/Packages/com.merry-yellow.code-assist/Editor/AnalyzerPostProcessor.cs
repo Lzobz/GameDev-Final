@@ -76,6 +76,7 @@ namespace Meryel.UnityCodeAssist.Editor
             "Meryel.UnityCodeAssist.Logger.dll",
             "Meryel.UnityCodeAssist.MQTTnet.dll",
             "Meryel.UnityCodeAssist.MQTTnet.Extensions.ManagedClient.dll",
+            "Meryel.UnityCodeAssist.Newtonsoft.Json.dll",
             "Meryel.UnityCodeAssist.ProjectData.dll",
             "Meryel.UnityCodeAssist.RoslynAnalyzerManager.dll",
             "Meryel.UnityCodeAssist.Synchronizer.dll",
