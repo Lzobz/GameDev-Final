@@ -1,0 +1,15 @@
+1. UI
+  - Timer
+  - Lives
+  - Level
+2. Player Prefs
+  - Player ID
+  - Time of day played and duration
+  - Score
+  - Feedback
+3. Level Design
+  - 4 or more levels
+  - Start Scene w/ Instructions
+      > will include how to play, dev names, start button and last played level
+  - End Scene with player feedback
+4. Get level restarting/lives working
