@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1923424881806821526}
   - component: {fileID: 332216831324431264}
   - component: {fileID: 8070626249228511744}
+  - component: {fileID: -920101525247303572}
   m_Layer: 0
   m_Name: barrier
   m_TagString: Untagged
@@ -146,3 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a1098a747d2f04fa9f2f0c6cdce4fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doesRotate: 0
+--- !u!114 &-920101525247303572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442462428915631353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8942e1ab63ed1824094c8ebb6d540e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
+  player: {fileID: 0}

@@ -26,14 +26,6 @@ public class Movebee : MonoBehaviour
                 transform.position = raycastHit.point;
                 print(transform.position);
             }
-            //if (raycastHit.collider.name == "barrier")
-            //{
-            //    Destroy(gameObject);
-            //}
-
-
-
-
         }
         if (Physics.Raycast(ray, out RaycastHit hit, 100))
             Debug.DrawLine(ray.origin, hit.point);
