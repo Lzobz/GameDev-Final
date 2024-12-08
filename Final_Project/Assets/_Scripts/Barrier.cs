@@ -1,7 +1,9 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Barrier : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class Barrier : MonoBehaviour
     public bool doesRotate;
     public GameObject spawnPoint;
     public GameObject bee;
+    public int deathCount = 3; 
+    public TextMeshProUGUI uilife;
+
 
 
     float rotSpeed = 100f;
@@ -26,6 +31,11 @@ public class Barrier : MonoBehaviour
         if (doesRotate) {
             transform.Rotate(0, 0, rotSpeed * Time.deltaTime);
         }
+
+        if (deathCount == 0)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
         
     }
 
@@ -41,6 +51,9 @@ public class Barrier : MonoBehaviour
             
             Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
             rb.velocity = Vector3.zero;
+
+            deathCount --;
+            uilife.text = "Lives: " + (deathCount);
 
         }
     }

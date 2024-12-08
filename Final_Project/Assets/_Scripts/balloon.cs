@@ -17,7 +17,24 @@ public class balloon : MonoBehaviour
 
 
     void Update()
-    { 
+    {
+
+        if (balloon.ballooncnt > 11)
+        {
+            SceneManager.LoadScene("Test Scene");  
+        }
+        if (balloon.ballooncnt > 23)
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        if (balloon.ballooncnt > 35)
+        {
+            SceneManager.LoadScene("Level4");
+        }
+        if (balloon.ballooncnt > 47)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
     }
 
     void OnTriggerEnter(Collider other)
