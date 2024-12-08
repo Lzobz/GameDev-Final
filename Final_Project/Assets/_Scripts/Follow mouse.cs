@@ -9,7 +9,7 @@ public class Followmouse : MonoBehaviour
     Vector3 launchPos = new Vector3(0, 0, 0);
     public GameObject Bee;
     Rigidbody BeeRigidbody;
-    bool clickedBee = false;
+    public bool clickedBee = false;
     public float moveSpeed = 10f;
     // Start is called before the first frame update
 

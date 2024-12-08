@@ -7,16 +7,16 @@ public class Barrier : MonoBehaviour
 {
     [Header("Inscribed")]
     public bool doesRotate;
+    public GameObject spawnPoint;
+    public GameObject bee;
+
 
     float rotSpeed = 100f;
 
-    
-
-
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -34,8 +34,14 @@ public class Barrier : MonoBehaviour
         //Debug.Log("Entered");
         if (other.gameObject.tag == "Player")
         {
-            Destroy(other.gameObject);
-           
+            other.gameObject.transform.position = spawnPoint.transform.position;
+
+            Followmouse script = other.gameObject.GetComponent<Followmouse>();
+            script.clickedBee = false;
+            
+            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+            rb.velocity = Vector3.zero;
+
         }
     }
 }
