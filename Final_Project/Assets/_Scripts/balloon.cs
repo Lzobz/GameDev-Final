@@ -19,22 +19,19 @@ public class balloon : MonoBehaviour
     void Update()
     {
 
-        if (balloon.ballooncnt > 11)
-        {
-            SceneManager.LoadScene("Test Scene");  
-        }
-        if (balloon.ballooncnt > 23)
-        {
-            SceneManager.LoadScene("Level3");
-        }
-        if (balloon.ballooncnt > 35)
-        {
-            SceneManager.LoadScene("Level4");
-        }
-        if (balloon.ballooncnt > 47)
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
+      
+        //if (balloon.ballooncnt > 23 && balloon.ballooncnt <36)
+        //{
+        //    SceneManager.LoadScene("Level3");
+        //}
+        //if (balloon.ballooncnt > 35)
+        //{
+        //    SceneManager.LoadScene("Level4");
+        //}
+        //if (balloon.ballooncnt > 47)
+        //{
+        //    SceneManager.LoadScene("EndScreen");
+        //}
     }
 
     void OnTriggerEnter(Collider other)
@@ -44,7 +41,22 @@ public class balloon : MonoBehaviour
             Destroy(this.gameObject);
             ballooncnt++;
         }
+        if (balloon.ballooncnt > 11 && balloon.ballooncnt<13)
+        {
+            SceneManager.LoadScene("Test Scene");
+        }
+        if (balloon.ballooncnt > 23 && balloon.ballooncnt < 25)
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        if (balloon.ballooncnt > 35 && balloon.ballooncnt < 37)
+        {
+            SceneManager.LoadScene("Level4");
+        }
+        if ( balloon.ballooncnt > 47)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
 
-        
     }
 }
