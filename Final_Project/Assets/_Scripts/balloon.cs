@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class balloon : MonoBehaviour
 {
     private Camera cam;
-    public static int ballooncnt;
+    public static int ballooncnt = 1;
 
     void Start()
     {
@@ -41,20 +41,23 @@ public class balloon : MonoBehaviour
             Destroy(this.gameObject);
             ballooncnt++;
         }
-        if (balloon.ballooncnt > 11 && balloon.ballooncnt<13)
+        if (ballooncnt == 12)
         {
             Debug.Log("Lvl 2");
             SceneManager.LoadScene("Level2");
+            ballooncnt++;
         }
-        if (balloon.ballooncnt > 23 && balloon.ballooncnt < 25)
+        if (ballooncnt > 23 && ballooncnt < 25)
         {
             SceneManager.LoadScene("Level3");
+            ballooncnt++;
         }
-        if (balloon.ballooncnt > 35 && balloon.ballooncnt < 37)
+        if (ballooncnt == 36)
         {
             SceneManager.LoadScene("Level4");
+            ballooncnt++;
         }
-        if ( balloon.ballooncnt > 47)
+        if (ballooncnt > 47)
         {
             SceneManager.LoadScene("EndScreen");
         }
