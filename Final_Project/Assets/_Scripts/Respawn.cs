@@ -30,5 +30,7 @@ public class Respawn : MonoBehaviour
         Rigidbody rb = bee.GetComponent<Rigidbody>();
         rb.velocity = Vector3.zero;
 
+        bee.transform.rotation = Quaternion.Euler(0, 0, 0);
+
     }
 }

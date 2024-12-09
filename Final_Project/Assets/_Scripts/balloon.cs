@@ -18,7 +18,6 @@ public class balloon : MonoBehaviour
 
     void Update()
     {
-
       
         //if (balloon.ballooncnt > 23 && balloon.ballooncnt <36)
         //{
@@ -38,11 +37,13 @@ public class balloon : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("Balloon Count: " + ballooncnt.ToString());
             Destroy(this.gameObject);
             ballooncnt++;
         }
         if (balloon.ballooncnt > 11 && balloon.ballooncnt<13)
         {
+            Debug.Log("Lvl 2");
             SceneManager.LoadScene("Level2");
         }
         if (balloon.ballooncnt > 23 && balloon.ballooncnt < 25)

@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.715}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 421, y: 281}
-  m_SizeDelta: {x: 649.1923, y: 55.7403}
+  m_AnchoredPosition: {x: 420.84863, y: 281.62048}
+  m_SizeDelta: {x: 649.1923, y: 54.463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323163703
 MonoBehaviour:
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stealing Code Since 2024!
+  m_text: Copying Other's Games Since 2024!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 3d4c06969c983444099ee9f6cbdf4c37, type: 2}
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 68.70863, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b3dfa31da3829428ad4eabd5f3cda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelOne: SampleScene
+  levelOne: Level1
   popUpPanel: {fileID: 74397508}
 --- !u!1 &1222825717
 GameObject:

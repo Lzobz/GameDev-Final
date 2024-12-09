@@ -834,7 +834,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1025,7 +1025,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1051,7 +1051,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0.55, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2859,11 +2859,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.89
+      value: -5.876
       objectReference: {fileID: 0}
     - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.22
+      value: 3.74
       objectReference: {fileID: 0}
     - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
       propertyPath: m_LocalPosition.z
