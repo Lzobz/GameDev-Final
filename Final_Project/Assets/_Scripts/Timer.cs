@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
         timerText.text = remainingTime.ToString("#,0");
         if (remainingTime < 0)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("EndScreen");
         }
     }
 }
