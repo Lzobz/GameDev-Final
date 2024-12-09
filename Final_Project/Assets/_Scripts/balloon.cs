@@ -40,6 +40,7 @@ public class balloon : MonoBehaviour
             Debug.Log("Balloon Count: " + ballooncnt.ToString());
             Destroy(this.gameObject);
             ballooncnt++;
+            ScoreCounter.score += 50;
         }
         if (ballooncnt == 12)
         {
