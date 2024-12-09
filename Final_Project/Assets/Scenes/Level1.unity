@@ -975,6 +975,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1082,9 +1083,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1056014721c4a45987af00edf6adc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uitLevel: {fileID: 1813701948}
-  level: 0
+  uitLives: {fileID: 1087145081}
   lives: 0
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99d2444aeeb6164991aa3f949148043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 1601450129}
+  bee: {fileID: 2019150009}
 --- !u!1001 &974318020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2225,7 +2239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Level: 1 of 4'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2413,48 +2427,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6383086679412409127, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
   m_PrefabInstance: {fileID: 2630605771410760945}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2019150010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019150009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da1613da103928a4c94355dd6651ce8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bee: {fileID: 2019150009}
-  clickedBee: 0
-  moveSpeed: 10
---- !u!54 &2019150016
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019150009}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &2091891961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2885,22 +2857,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3178030771170492715, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4187374465152631101, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.89
@@ -2948,13 +2904,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6383086679412409127, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2019150010}
-    - targetCorrespondingSourceObject: {fileID: 6383086679412409127, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2019150016}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8102c61661aa5439cf9184ee9aa076, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

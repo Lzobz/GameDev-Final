@@ -9,10 +9,7 @@ public class Barrier : MonoBehaviour
 {
     [Header("Inscribed")]
     public bool doesRotate;
-    public GameObject spawnPoint;
-    public GameObject bee;
-    public int deathCount = 3; 
-    public TextMeshProUGUI uilife;
+
 
 
 
@@ -21,7 +18,7 @@ public class Barrier : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -31,11 +28,6 @@ public class Barrier : MonoBehaviour
         if (doesRotate) {
             transform.Rotate(0, 0, rotSpeed * Time.deltaTime);
         }
-
-        if (deathCount == 0)
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
         
     }
 
@@ -44,16 +36,20 @@ public class Barrier : MonoBehaviour
         //Debug.Log("Entered");
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.transform.position = spawnPoint.transform.position;
+            //other.gameObject.transform.position = spawnPoint.transform.position;
 
-            Followmouse script = other.gameObject.GetComponent<Followmouse>();
-            script.clickedBee = false;
+            //Followmouse script = other.gameObject.GetComponent<Followmouse>();
+            //script.clickedBee = false;
+
+            //Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+            //rb.velocity = Vector3.zero;
+
+            Respawn respawnScript = Camera.main.GetComponent<Respawn>();
+            respawnScript.ResetBee();
+
+            TextUI textScript = Camera.main.GetComponent<TextUI>();
+            textScript.lives -= 1;
             
-            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
-            rb.velocity = Vector3.zero;
-
-            deathCount --;
-            uilife.text = "Lives: " + (deathCount);
 
         }
     }

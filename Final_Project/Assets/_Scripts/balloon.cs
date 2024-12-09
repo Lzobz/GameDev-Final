@@ -43,7 +43,7 @@ public class balloon : MonoBehaviour
         }
         if (balloon.ballooncnt > 11 && balloon.ballooncnt<13)
         {
-            SceneManager.LoadScene("Test Scene");
+            SceneManager.LoadScene("Level2");
         }
         if (balloon.ballooncnt > 23 && balloon.ballooncnt < 25)
         {

@@ -19,6 +19,7 @@ public class Followmouse : MonoBehaviour
     }
     public void Update()
     {
+        //Debug.Log("Clicked: " + clickedBee.ToString());
         if (Input.GetMouseButtonDown(0))
         { //check for left mouse button click
             //create ray from the camera to the mouse position

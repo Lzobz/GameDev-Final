@@ -996,6 +996,8 @@ GameObject:
   - component: {fileID: 392457271}
   - component: {fileID: 392457270}
   - component: {fileID: 392457273}
+  - component: {fileID: 392457275}
+  - component: {fileID: 392457274}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1091,6 +1093,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   remainingTime: 240
   timerText: {fileID: 77154173}
+--- !u!114 &392457274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392457269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1056014721c4a45987af00edf6adc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uitLives: {fileID: 745983306}
+  lives: 0
+--- !u!114 &392457275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392457269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99d2444aeeb6164991aa3f949148043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 959154236}
+  bee: {fileID: 207422341}
 --- !u!1001 &421324699
 PrefabInstance:
   m_ObjectHideFlags: 0

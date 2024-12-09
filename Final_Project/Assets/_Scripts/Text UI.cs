@@ -9,23 +9,24 @@ public class TextUI : MonoBehaviour
 {
 
     [Header("Inscribed")]
-    public TextMeshProUGUI uitLevel;
-    public int level;
+    public TextMeshProUGUI uitLives;
+
     public int lives;
     // Start is called before the first frame update
     void Start()
     {
-        
         lives = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (uitLives != null)
+        {
+            uitLives.text = "Lives: " + (lives);
 
-
-
-
-       
+        }
     }
+
+
 }
