@@ -42,26 +42,26 @@ public class balloon : MonoBehaviour
             ballooncnt++;
             ScoreCounter.score += 50;
         }
-        if (ballooncnt == 12)
-        {
-            Debug.Log("Lvl 2");
-            SceneManager.LoadScene("Level2");
-            ballooncnt++;
-        }
-        if (ballooncnt > 23 && ballooncnt < 25)
-        {
-            SceneManager.LoadScene("Level3");
-            ballooncnt++;
-        }
-        if (ballooncnt == 36)
-        {
-            SceneManager.LoadScene("Level4");
-            ballooncnt++;
-        }
-        if (ballooncnt > 47)
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
+        //if (ballooncnt == 12)
+        //{
+        //    Debug.Log("Lvl 2");
+        //    SceneManager.LoadScene("Level2");
+        //    ballooncnt++;
+        //}
+        //if (ballooncnt > 23 && ballooncnt < 25)
+        //{
+        //    SceneManager.LoadScene("Level3");
+        //    ballooncnt++;
+        //}
+        //if (ballooncnt == 36)
+        //{
+        //    SceneManager.LoadScene("Level4");
+        //    ballooncnt++;
+        //}
+        //if (ballooncnt > 47)
+        //{
+        //    SceneManager.LoadScene("EndScreen");
+        //}
 
     }
 }
