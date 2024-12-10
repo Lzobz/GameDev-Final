@@ -13,7 +13,7 @@ public class TextUI : MonoBehaviour
 
     public int lives;
     // Start is called before the first frame update
-    void Start()
+     void Start()
     {
         lives = 3;
     }

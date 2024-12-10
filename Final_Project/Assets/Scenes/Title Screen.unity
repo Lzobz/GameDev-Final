@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Copying Other's Games Since 2024!
+  m_text: Popping balloons Since 2024!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 3d4c06969c983444099ee9f6cbdf4c37, type: 2}
@@ -1595,7 +1595,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Put Instructions Here
+  m_text: Fly around each stage avoiding red barriers and bombs. Pop balloons to
+    get points and pop the gold balloon to end the level. If time runs out it's game
+    over!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 48142603111778c4f953fa927d9afca5, type: 2}

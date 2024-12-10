@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] public static float remainingTime;
     [SerializeField] TextMeshProUGUI timerText;
+    public static float finaltime;
 
 
     private void Awake()
@@ -29,5 +30,7 @@ public class Timer : MonoBehaviour
         {
             SceneManager.LoadScene("EndScreen");
         }
+
+        finaltime = 240 - remainingTime;
     }
 }
