@@ -47,8 +47,12 @@ public class Barrier : MonoBehaviour
             Respawn respawnScript = Camera.main.GetComponent<Respawn>();
             respawnScript.ResetBee();
 
-            TextUI textScript = Camera.main.GetComponent<TextUI>();
-            textScript.lives -= 1;
+            TextUI.lives--;
+            if (TextUI.lives == 0)
+            {
+                SceneManager.LoadScene("EndScreen");
+            }
+
             
 
         }

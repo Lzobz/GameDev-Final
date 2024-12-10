@@ -8,6 +8,7 @@ public class ScoreCounter : MonoBehaviour
 {
     [Header("Dynamic")]
     public static int score = 0;
+    public static int life = 3;
     private TextMeshProUGUI uiscore;
     // Start is called before the first frame update
     void Start()

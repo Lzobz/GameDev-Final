@@ -1145,6 +1145,7 @@ GameObject:
   - component: {fileID: 818730639}
   - component: {fileID: 818730642}
   - component: {fileID: 818730643}
+  - component: {fileID: 818730644}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1252,6 +1253,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputFd: {fileID: 2138877667}
   Feedback: {fileID: 157074220}
+--- !u!114 &818730644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818730638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b3dfa31da3829428ad4eabd5f3cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOne: level1
+  popUpPanel: {fileID: 0}
 --- !u!1 &863897729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1879,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818730644}
         m_TargetAssemblyTypeName: StartScreen, Assembly-CSharp
         m_MethodName: startGame
         m_Mode: 1
@@ -2130,7 +2145,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 818730644}
         m_TargetAssemblyTypeName: StartScreen, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1

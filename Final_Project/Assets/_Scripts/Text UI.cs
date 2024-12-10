@@ -4,18 +4,19 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class TextUI : MonoBehaviour
 {
 
-    [Header("Inscribed")]
+    [Header("Dynamic")]
     public TextMeshProUGUI uitLives;
 
-    public int lives;
+    public static int lives = 3;
     // Start is called before the first frame update
      void Start()
     {
-        lives = 3;
+        uitLives = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class TextUI : MonoBehaviour
     {
         if (uitLives != null)
         {
-            uitLives.text = "Lives: " + (lives);
+            uitLives.text = lives.ToString("#,0");
 
         }
     }
