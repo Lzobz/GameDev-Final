@@ -12,6 +12,9 @@ public class StartScreen : MonoBehaviour
     public void startGame()
     {
         SceneManager.LoadScene(levelOne);
+        TextUI.lives = 3;
+        ScoreCounter.score = 0;
+
     }
 
     public void ExitGame()
